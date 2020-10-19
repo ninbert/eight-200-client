@@ -16,14 +16,10 @@ const put = (route, params) => {
 	return HTTP.put(route, params).then((res) => res.data);
 };
 
-const patch = (route, params) => {
-	return HTTP.patch(route, params).then((res) => res.data);
-};
-
 const remove = (route, params) => {
 	return HTTP.delete(route, params).then((res) => res.data);
 };
 
 export default {
-    get,post,patch,remove,put
+    get,post,remove,put
 }
